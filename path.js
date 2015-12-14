@@ -1,4 +1,4 @@
-var width = 1300,
+var width = 1410,
     height =700;
 
 
