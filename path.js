@@ -8,7 +8,7 @@ var svg = d3.select('#vis').append('svg')
 
 var projection = d3.geo.mercator()
     .center([-119, 37])
-    .scale(3500)
+    .scale(3200)
     .translate([width / 2, height / 2 - 20])
     .clipExtent([[0, 0], [width, height + 1]])
     .precision(0);
