@@ -1,0 +1,106 @@
+<header>
+	   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	   <link href="style.css" rel="stylesheet" type="text/css">
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+
+</header>
+
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/queue.v1.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+
+<script type="text/javascript" src="controls.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+
+
+<body>
+	
+	<div id="section1" class="container-fluid">
+		<video autoplay loop muted id="video-background">
+  			<source src="video/background2.mp4" type="video/mp4">
+		</video>
+<!--     <img id="audio" src="img/audio_off.png"/>
+ -->		<div>
+			<p id="brief">Unforgettable Journey CA1 Pacific Hwy</p>
+		</div>
+	</div>
+	
+	<div id="section2" class="container-fluid">
+		  <div id="vis">
+      <button id="btn" onclick="playPause(this,'story')">Play</button>
+      <!-- <video id="story" src="video/story.MOV" width="650" preload></video> -->
+      <video id="story" src="https://youtu.be/flk-pMsxvyc" width="650" preload></video>
+      <p id="LA">LA</p>
+      <p id="SF">San Fransisco</p>
+      <div class="scroll">
+      <p>From July16 to July18. We traced from Los Angeles to San Francisco through CA1 Pacific Coast High Way.</p>
+      <p>A red 'Beatles'. Two girls. Three whole days.</p>
+      <p>It is a vacuum and happy period. It is an unforgettable journey.</p>
+      <p>July 15, we arrived in Santa Barbara.</p>
+      <p>July 16, we arrived in Monterey.</p>
+      <p>July 17, we arrived in San Francisco.</p>
+      <p>We didn't plan a lot. That is almost the end of the summer. And we just wanted to enjoy ourselves. Maybe that's the reason why it made the second day a little bit miserable, thrilling and really unforgettable.</p>
+      <p>On July15, we drove a lot. We started off at noon, driving almost 6 hours. It was totally dark when we arrived in Monterey. If we were driving on the US1, instead of CA1, it would be totally fine. But it was so dangerous to drive on the coast high way during sunset. We needed turned around like hundreds of times. The sun shines directly towards our eyes. No sunglasses can work during that period. Both of us were extremely nervous. We could not stop anywhere besides the destination. There were always motorcycles flying beside us in full speed.</p>
+      </div>
+      </div>  
+  </div>
+
+  <div id="section3" class="container-fluid">
+  		    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+
+       		<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 700px; overflow: hidden;">
+            	<div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/CA1_4.jpg" />
+                <div class="show">
+                     <p><a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">See more.</a></p>
+                     <div id="example" class="more">
+                     <p>We stopped here on the way from St. Barbara to Monterey. It seemed to be a wrong choice to drive from South to North. But we still tried enjoying the sea view.</p>
+                     <p><a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;">Hide this content.</a></p>
+                     </div>
+                </div>
+              </div>
+              <div data-p="225.00" style="display: none;">
+                  <img data-u="image" src="img/CA1_1.jpg" />
+                  <div class="show">
+                     <p><a href="#" id="example2-show" class="showLink" onclick="showHide('example2');return false;">See more.</a></p>
+                     <div id="example2" class="more">
+                     <p>This is a little town between St. Barbara and Monterey. When we walked here, it was like hanging around in the Europe, a lovely Danmark town.</p>
+                     <p><a href="#" id="example2-hide" class="hideLink" onclick="showHide('example2');return false;">Hide this content.</a></p>
+                     </div>
+                </div>
+              </div>
+              <div data-p="225.00" style="display: none;">
+                  <img data-u="image" src="img/CA1_2.jpg" />
+                  <div class="show">
+                     <p><a href="#" id="example3-show" class="showLink" onclick="showHide('example3');return false;">See more.</a></p>
+                     <div id="example3" class="more">
+                       <p>It was such a weird view. He was sitting in the sand, with his gittar, singing something few can understand.</p>
+                       <p><a href="#" id="example3-hide" class="hideLink" onclick="showHide('example3');return false;">Hide this content.</a></p>
+                     </div>
+                  </div>
+              </div>
+          </div>
+       		 <!-- Bullet Navigator -->
+        	<div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        	</div>
+
+          </div>
+
+          <p id="profolio">For more information: <a><i>www.jiaxinliu.me</i></a> </p>
+  </div>
+
+</body>
+<script type="text/javascript">
+     
+</script>
+
+<script src="path.js"></script>
+<script src="gallery.js"></script>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <!--   Created using jsbin.com   Source can be edited via http://jsbin.com/ocupor/1/edit
+    -->
+    <head>
+        <meta charset=utf-8 />
+        <title>JS Bin</title>
+        <style>
+            #right {
+                position: absolute;
+                top: 2000px;
+            }
+            #video1 {
+                position: absolute;
+                left: 2000px;
+                top: 2000px;
+            }
+            #video2 {
+                position: absolute;
+                left: 2000px;
+                top: 3000px;
+            }
+
+        </style>
+
+        <style id="jsbin-css">
+        </style>
+    </head>
+    #
+    <body style="width: 4000px; height: 4000px;">
+        <div id="info"></div>
+        <div id="down">
+            scroll down please...
+        </div>
+        <div id="right">
+            scroll right please...
+        </div>
+        <video id="video1">
+            <source src="http://video-js.zencoder.com/oceans-clip.mp4"/>
+
+        </video>
+        <script>
+            var video = document.getElementById('video1'), fraction = 0.8;
+
+            function checkScroll() {
+                var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                b = y + h, //bottom
+                visibleX, visibleY, visible;
+
+                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+                visible = visibleX * visibleY / (w * h);
+
+                if (visible > fraction) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            }
+
+            checkScroll();
+            window.addEventListener('scroll', checkScroll, false);
+            window.addEventListener('resize', checkScroll, false);
+        </script>
+
+        <video id="video2">
+            <source src="http://video-js.zencoder.com/oceans-clip.mp4"/>
+
+        </video>
+        <script>
+            var video = document.getElementById('video2'), fraction = 0.8;
+
+            function checkScroll() {
+                var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                b = y + h, //bottom
+                visibleX, visibleY, visible;
+
+                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+                visible = visibleX * visibleY / (w * h);
+
+                if (visible > fraction) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            } checkScroll();
+            window.addEventListener('scroll', checkScroll, false);
+            window.addEventListener('resize', checkScroll, false);
+
+        </script>
+
+    </body>
+</html>
